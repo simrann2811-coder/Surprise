@@ -1,0 +1,30 @@
+/* Add to your previous CSS */
+#auth-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--dark);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--pink);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 120px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 15px var(--pink);
+}
+
+.hidden { display: none !important; }
