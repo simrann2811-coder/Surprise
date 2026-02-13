@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Encrypted Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader"><div class="pulse">❤️</div></div>
+
+    <div id="auth-overlay">
+        <div class="glass-card">
+            <h3>Access Restricted</h3>
+            <p>Enter our special date (DDMM) to decrypt:</p>
+            <input type="password" id="passkey" placeholder="____" maxlength="4">
+            <button onclick="checkPass()">Unlock</button>
+            <p id="error-msg" style="color: #ff4d6d; display: none; margin-top: 10px;">Incorrect Key</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="heart-box hidden" id="heartTrigger">
+            <div class="heart-3d"></div>
+            <p class="tap-text">Key Accepted. Tap to open.</p>
+        </div>
+
+        <div id="messageVault" class="hidden">
+            <div class="glass-card">
+                <h2>For My Favorite Person ❤️</h2>
+                <div class="message-content">
+                    <p>
+                        "I Wanna say it for the whole of Valentine week,
+                      I promise to you that you are my rose and
+                      I promise I <bstrong>WILL</strong>b> never give <strong>YOU</strong> to anyone else.
+                      And don't <strong>BE</strong> worried about your thorns...
+                      they fit perfectly in <strong>MY</strong> fingers like a melted chcolate.
+                      If I were a kid,
+                      you would have replaced my favourite teddy.
+                      Only for you... I have preserved my hugs & kisses.
+                      Only for you... 
+                      I have kept my lips waiting to say the word <strong>VALENTINE?</strong>..."
+                    </p>
+                </div>
+                <button onclick="location.reload()">Lock Vault</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
