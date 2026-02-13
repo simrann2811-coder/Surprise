@@ -1,5 +1,5 @@
 // CONFIGURATION
-const CORRECT_PASS = "2023"; // Change this to your anniversary or a special 4-digit code
+const CORRECT_PASS = "2405"; // Change this to your anniversary or a special 4-digit code
 
 // Password Logic
 function checkPass() {
